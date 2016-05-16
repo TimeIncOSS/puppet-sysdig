@@ -9,4 +9,3 @@ project_page  'https://github.com/garethr/garethr-sysdig'
 
 dependency 'puppetlabs/stdlib'
 dependency 'puppetlabs/apt'
-dependency 'stahnma/epel'

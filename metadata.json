@@ -9,7 +9,6 @@
   "project_page": "https://github.com/garethr/garethr-sysdig",
   "dependencies": [
     {"name": "puppetlabs/apt"},
-    {"name": "puppetlabs/stdlib"},
-    {"name": "stahnma/epel"}
+    {"name": "puppetlabs/stdlib"}
   ]
 }

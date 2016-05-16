@@ -22,7 +22,6 @@ describe 'sysdig' do
 
       context 'on Redhat' do
         describe 'should install required repo' do
-          it { should contain_yumrepo('epel') }
           it { should contain_yumrepo('sysdig') }
         end
       end

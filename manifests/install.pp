@@ -24,7 +24,6 @@ class sysdig::install {
       ]
     }
     'RedHat': {
-      include 'epel'
       yumrepo { 'sysdig':
         baseurl  => 'http://download.draios.com/stable/rpm/$basearch',
         descr    => 'Sysdig repository by Draios',
@@ -34,7 +33,7 @@ class sysdig::install {
 
       ensure_packages(["kernel-devel-${::kernelrelease}"])
 
-      $dependencies = [ Yumrepo['sysdig'], Class['epel'] ]
+      $dependencies = [ Yumrepo['sysdig'] ]
     }
     default: {
       $dependencies = []
