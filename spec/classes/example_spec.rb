@@ -30,8 +30,8 @@ describe 'sysdig' do
     describe "without any parameters on #{osfamily}" do
       it { should compile.with_all_deps }
 
-      it { should contain_class('sysdig::params') }
-      it { should contain_class('sysdig::install') }
+      it { should contain_class('sysdig::sysdig::params') }
+      it { should contain_class('sysdig::sysdig::install') }
 
       it { should contain_package('kernel-devel-3.10.0-123.el7.x86_64') }
       it { should contain_package('sysdig').with_ensure('installed') }

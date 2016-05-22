@@ -1,0 +1,9 @@
+  - name: <%= @name %>
+    enabled: <%= @enabled %>
+    check_module: <%= @check_module %>
+    pattern:<% @pattern.each do |key, value| %>
+      <%= key %>: <%= value -%>
+    <%- end %>
+    conf:<% @conf.each do |key, value| %>
+      <%= key %>: <%= value -%>
+    <%- end -%>

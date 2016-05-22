@@ -40,9 +40,4 @@ class sysdig::install {
       $dependencies = []
     }
   }
-
-  package { 'sysdig':
-    ensure  => $sysdig::ensure,
-    require => $dependencies,
-  }
 }

@@ -8,11 +8,11 @@
 #   What version of sysdig is required, defaults to latest
 #
 class sysdig (
-  $ensure = $sysdig::params::ensure,
-) inherits sysdig::params {
+  $ensure = $sysdig::sysdig::params::ensure,
+) inherits sysdig::sysdig::params {
 
   validate_string($ensure)
 
-  class { 'sysdig::install': } ->
+  class { 'sysdig::sysdig': ensure => $ensure } ->
   Class['sysdig']
 }
