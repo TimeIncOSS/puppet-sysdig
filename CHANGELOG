@@ -4,3 +4,5 @@
 - Fix metadata.json syntax
 2014-09-14 Release 0.1.2
 - Fix RHEL and CentOS support
+2016-05-23 Release 0.2.0
+- Add support for Cloud Agent
