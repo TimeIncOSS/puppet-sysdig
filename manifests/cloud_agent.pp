@@ -1,7 +1,6 @@
 # == Class sysdig::cloud_agent
 #
-class sysdig::cloud_agent($collector_port = $::sysdig::cloud_agent::params::collector_port) {
-  include ::sysdig::cloud_agent::params
+class sysdig::cloud_agent($collector_port = $::sysdig::cloud_agent::params::collector_port) inherits sysdig::cloud_agent::params {
   include ::sysdig::cloud_agent::install
   include ::sysdig::cloud_agent::service
 }
