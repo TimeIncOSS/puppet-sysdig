@@ -26,7 +26,7 @@ class sysdig::install {
     'RedHat': {
       ensure_packages(["kernel-devel-${::kernelrelease}"])
 
-      $dependencies = [ Yumrepo['sysdig'] ]
+      $dependencies = []
     }
     default: {
       $dependencies = []
